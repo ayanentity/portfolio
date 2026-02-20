@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Your Name",
-  description: "Welcome to my portfolio website showcasing my work and projects",
+  title: "Ayanentity | アヤネのアイデンティティ",
+  description: "なかざと あやねのポートフォリオサイトです",
+  icons: {
+    icon: "/@app/favicon.ico",
+  },
 };
 
 export default function RootLayout({
