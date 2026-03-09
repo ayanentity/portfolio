@@ -35,6 +35,10 @@ body {
     line-height: 1.5;
   }
 
+  .bleed-left {
+    margin-left: calc(50% - 50vw);
+  }
+
   .bleed-right {
     margin-right: calc(50% - 50vw);
   }
