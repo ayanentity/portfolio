@@ -19,10 +19,14 @@ export default async function GalleryPage() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="relative min-h-screen pb-16 pt-24 md:pt-28">
-        <div className="relative z-10 w-full px-6 md:px-14">
+        <div className="relative z-10 w-full mb-6 px-6 pt-6 md:px-14">
           <h2 className="mb-6 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
             Gallery
           </h2>
+
+          <p className="mb-6 body-text text-[#2F2F2F]">
+            これまでに参加したイベントや発表会、制作作品の思い出の写真：特に気に入っているものを集めました！
+          </p>
 
           {/* デスクトップ: 3x3 グリッド */}
           <div className="hidden md:grid md:grid-cols-3 md:gap-2">
@@ -41,13 +45,12 @@ export default async function GalleryPage() {
               </div>
             ))}
           </div>
-
           {/* スマホ・縦長: 1列 */}
           <div className="flex flex-col gap-2 md:hidden">
             {images.map((filename) => (
               <div
                 key={filename}
-                className="relative w-full aspect-[9/16] overflow-hidden bg-slate-100"
+                className="relative w-full aspect-[4/3] overflow-hidden bg-slate-100"
               >
                 <Image
                   src={`/${GALLERY_IMG_DIR}/${filename}`}
