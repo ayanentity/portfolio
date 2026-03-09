@@ -43,7 +43,7 @@ export default function Home() {
           {/* ===== About me ===== */}
           <section className="mt-14 md:mt-20">
             <div className="flex flex-col gap-8">
-              <h2 className="mb-4 text-xl font-bold tracking-[0.04em] text-[#D1180A]">
+              <h2 className="mb-6 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
                 About me
               </h2>
 
@@ -59,7 +59,7 @@ export default function Home() {
                   <p className="mt-4 text-sm leading-relaxed text-[#2F2F2F]">
                     2003.5.20 / 沖縄県うるま市生まれ
                     <br />
-                    小さい頃からものづくりが好きで、在学中はハッカソンやインターン、個人活動を通して幅広いデザインに取り組んできました。プロダクトからグラフィックまで、チームでアイデアを形にすることが大好きです。
+                    小さい頃からものづくりが好きで、ハッカソンやインターン、個人活動を通して幅広いデザインに取り組んでいます。プロダクトからグラフィックまで、チームでアイデアを形にすることが大好きです。
                   </p>
 
                   <ul className="mt-6 space-y-2 text-xs font-bold leading-relaxed text-[#2F2F2F]">
@@ -84,9 +84,9 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className="flex justify-items-center md:justify-end">
+                <div className="flex justify-items-center pl-10 md:justify-end">
                   <div className="w-full max-w-[520px]">
-                    <div className="relative w-full aspect-[5/6] overflow-hidden bg-white">
+                    <div className="relative h-full aspect-[5/6] overflow-hidden bg-white">
                       <Image
                         src="/home/about-right.png"
                         alt=""
@@ -102,8 +102,8 @@ export default function Home() {
           </section>
 
           {/* ===== Interests ===== */}
-          <section className="mt-14 md:mt-20">
-            <h2 className="mb-8 text-sm font-bold tracking-[0.04em] text-[#D1180A]">
+          <section className="mt-60 md:mt-20">
+            <h2 className="mb-24 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
               What are your interests?
             </h2>
 

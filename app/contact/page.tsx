@@ -14,7 +14,7 @@ export default function ContactPage() {
             Contact
           </h2>
 
-          <h3 className="mb-6 gap-2 text-[32px] font-extrabold leading-snug text-[#2F2F2F] md:text-4xl">
+          <h3 className="mt-24 mb-6 gap-2 text-[32px] font-extrabold leading-snug text-[#2F2F2F] md:text-4xl">
             みなさんと一緒に
             <br />
             ものづくりがしたいです
