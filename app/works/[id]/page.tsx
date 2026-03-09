@@ -32,7 +32,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
           {/* PDFビューアー */}
           <PDFViewer src={work.pdfPath} />
         </div>
-      </main>
+      </main>ø
     </div>
   );
 }
