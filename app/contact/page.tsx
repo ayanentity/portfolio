@@ -93,6 +93,10 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
+
+      <footer className="mt-14 pb-8 text-center text-xs text-[#2F2F2F]">
+        ©2026 Nakazato Ayane
+      </footer>
     </div>
   );
 }

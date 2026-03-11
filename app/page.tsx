@@ -2,18 +2,23 @@ import Image from "next/image";
 import { Header } from "./components/Header";
 
 const designerChips = [
-  { label: "Designer Skill", left: "62%", top: "20%" },
-  { label: "Designer Skill", left: "72%", top: "18%" },
-  { label: "Designer Skill", left: "82%", top: "20%" },
-  { label: "Designer Skill", left: "58%", top: "32%" },
-  { label: "Designer Skill", left: "70%", top: "32%" },
-  { label: "Designer Skill", left: "82%", top: "32%" },
-  { label: "Designer Skill", left: "64%", top: "44%" },
+  { label: "イラスト制作", left: "62%", top: "20%" },
+  { label: "UIデザイン", left: "72%", top: "18%" },
+  { label: "グラフィックデザイン", left: "82%", top: "20%" },
+  { label: "UX設計", left: "58%", top: "32%" },
+  { label: "動画編集", left: "70%", top: "32%" },
+  { label: "ポスターデザイン", left: "82%", top: "32%" },
+  { label: "写真撮影", left: "18%", top: "80%" },
+  { label: "3Dモデリング", left: "33%", top: "90%" },
 ];
 
 const generalChips = [
-  { label: "General Skill", left: "18%", top: "40%" },
-  { label: "General Skill", left: "33%", top: "28%" },
+  { label: "資料作成", left: "60%", top: "10%" },
+  { label: "企画立案", left: "78%", top: "8%" },
+  { label: "GitHub", left: "40%", top: "20% " },
+  { label: "プレゼン発表", left: "48%", top: "28%" },
+  { label: "ドキュメンテーション", left: "20%", top: "28%" },
+  { label: "ファシリテーション", left: "64%", top: "48%" },
 ];
 
 export default function Home() {
@@ -79,6 +84,7 @@ export default function Home() {
                     </li>
                     <li>2026.3 技育展2025 決勝出場</li>
                     <li>2026.3 P2HACKS 2025 Post-PBL部門 最優秀賞 </li>
+                    <li>2026.3 Progate Women's ハッカソン 2026 studist賞</li>
                     <li>2026.3 Agile PBL祭り2026 登壇</li>
                     <li>2026.3 公立はこだて未来大学 卒業</li>
                   </ul>
@@ -86,7 +92,7 @@ export default function Home() {
 
                 <div className="flex justify-items-center pl-10 md:justify-end">
                   <div className="w-full max-w-[520px]">
-                    <div className="relative h-full aspect-[5/6] overflow-hidden bg-white">
+                    <div className="relative h-full aspect-[4/4] overflow-hidden bg-white">
                       <Image
                         src="/home/about-right.png"
                         alt=""
