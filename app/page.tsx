@@ -69,24 +69,27 @@ export default function Home() {
 
                   <ul className="mt-6 space-y-2 text-xs font-bold leading-relaxed text-[#2F2F2F]">
                     <li>
-                      2024.5
+                      2024.5　　
                       PBL学習「使ってもらって学ぶフィールド指向システムデザイン
                       すうぃふと2024」
                     </li>
-                    <li>2025.3 Agile PBL祭り2025 登壇</li>
-                    <li>2025.3 株式会社Progate デザイナーインターン</li>
-                    <li>2025.5 高度ICT演習「Dotto」開発チームに参加</li>
+                    <li>2025.3 　　Agile PBL祭り2025 登壇</li>
+                    <li>2025.3 　　株式会社Progate デザイナーインターン</li>
+                    <li>2025.5 　　高度ICT演習「Dotto」開発チームに参加</li>
                     <li>
-                      2025.10 JPHACKS 2025 Hack Day 札幌会場Audience Award賞
+                      2025.10 　　JPHACKS 2025 Hack Day 札幌会場Audience Award賞
                     </li>
                     <li>
-                      2025.11 JPHACKS 2025 Award Day イノベータ認定作品に選出
+                      2025.11 　　JPHACKS 2025 Award Day
+                      イノベータ認定作品に選出
                     </li>
-                    <li>2026.3 技育展2025 決勝出場</li>
-                    <li>2026.3 P2HACKS 2025 Post-PBL部門 最優秀賞 </li>
-                    <li>2026.3 Progate Women's ハッカソン 2026 studist賞</li>
-                    <li>2026.3 Agile PBL祭り2026 登壇</li>
-                    <li>2026.3 公立はこだて未来大学 卒業</li>
+                    <li>2026.3 　　技育展2025 決勝出場</li>
+                    <li>2026.3 　　P2HACKS 2025 Post-PBL部門 最優秀賞 </li>
+                    <li>
+                      2026.3 　　Progate Women's ハッカソン 2026 studist賞
+                    </li>
+                    <li>2026.3 　　Agile PBL祭り2026 登壇</li>
+                    <li>2026.3 　　公立はこだて未来大学 卒業</li>
                   </ul>
                 </div>
 
@@ -115,10 +118,10 @@ export default function Home() {
 
             <div className="flex flex-col gap-2">
               <div className="inline-flex flex-col gap-2">
-                <span className="inline-flex w-fit rounded-sm bg-[#D1180A] px-2 py-1 text-[10px] font-bold text-white">
+                <span className="inline-flex w-fit rounded-sm bg-[#D1180A] px-2 py-1 text-[8px] md:text-[10px] font-bold text-white">
                   Designer Skill
                 </span>
-                <span className="inline-flex w-fit rounded-sm border border-[#D1180A] bg-white px-2 py-1 text-[10px] font-bold text-[#D1180A]">
+                <span className="inline-flex w-fit rounded-sm border border-[#D1180A] bg-white px-2 py-1 text-[8px] md:text-[10px] font-bold text-[#D1180A]">
                   General Skill
                 </span>
               </div>
@@ -131,16 +134,16 @@ export default function Home() {
                     <div className="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-[#E0E0E0]" />
 
                     {/* labels */}
-                    <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-6 text-[10px] font-semibold text-[#2F2F2F]">
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-6 text-[8px] md:text-[10px] font-semibold text-[#2F2F2F]">
                       経験あり
                     </div>
-                    <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-5 text-[10px] font-semibold text-[#2F2F2F]">
+                    <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-5 text-[8px] md:text-[10px] font-semibold text-[#2F2F2F]">
                       未経験
                     </div>
-                    <div className="absolute left-0 top-1/2 -translate-x-8 -translate-y-1/2 text-[10px] font-semibold text-[#2F2F2F]">
+                    <div className="absolute left-0 top-1/2 -translate-x-8 -translate-y-1/2 text-[8px] md:text-[10px] font-semibold text-[#2F2F2F]">
                       興味あり
                     </div>
-                    <div className="absolute right-0 top-1/2 translate-x-6 -translate-y-1/2 text-[10px] font-semibold text-[#2F2F2F]">
+                    <div className="absolute right-0 top-1/2 translate-x-6 -translate-y-1/2 text-[8px] md:text-[10px] font-semibold text-[#2F2F2F]">
                       好き
                     </div>
 
@@ -148,7 +151,7 @@ export default function Home() {
                     {designerChips.map((c, idx) => (
                       <span
                         key={`d-${idx}`}
-                        className="absolute inline-flex rounded-sm bg-[#D1180A] px-2 py-1 text-[10px] font-bold text-white"
+                        className="absolute inline-flex rounded-sm bg-[#D1180A] px-2 py-1 text-[6px] md:text-[10px] font-bold text-white"
                         style={{ left: c.left, top: c.top }}
                       >
                         {c.label}
@@ -157,7 +160,7 @@ export default function Home() {
                     {generalChips.map((c, idx) => (
                       <span
                         key={`g-${idx}`}
-                        className="absolute inline-flex rounded-sm border border-[#D1180A] bg-white px-2 py-1 text-[10px] font-bold text-[#D1180A]"
+                        className="absolute inline-flex rounded-sm border border-[#D1180A] bg-white px-2 py-1 text-[6px] md:text-[10px] font-bold text-[#D1180A]"
                         style={{ left: c.left, top: c.top }}
                       >
                         {c.label}
