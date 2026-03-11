@@ -18,6 +18,28 @@ export const metadata: Metadata = {
   icons: {
     icon: "/@app/favicon.ico",
   },
+  openGraph: {
+    title: "Ayanentity | アヤネのアイデンティティ",
+    description: "なかざと あやねのポートフォリオサイトです",
+    url: "https://ayanentity.com",
+    siteName: "Ayanentity",
+    locale: "ja_JP",
+    type: "website",
+    images: [
+      {
+        url: "/ogp.png",
+        width: 1200,
+        height: 630,
+        alt: "Ayane's identity Ayanentity",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ayanentity | アヤネのアイデンティティ",
+    description: "なかざと あやねのポートフォリオサイトです",
+    images: ["/ogp.png"],
+  },
 };
 
 export default function RootLayout({
