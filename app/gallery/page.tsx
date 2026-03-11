@@ -62,6 +62,10 @@ export default async function GalleryPage() {
               </div>
             ))}
           </div>
+
+          <footer className="mt-14 text-center text-xs text-[#2F2F2F]">
+            ©2026 Nakazato Ayane
+          </footer>
         </div>
       </main>
     </div>
