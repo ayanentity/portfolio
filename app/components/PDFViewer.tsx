@@ -89,10 +89,10 @@ export function PDFViewer({ src }: PDFViewerProps) {
       const padding = 32; // px-4 (16px * 2)
       const sidePadding = screenWidth > 768 ? 112 : 48; // md:px-14 (56px * 2) or px-6 (24px * 2)
 
-      // PCなど横幅が大きい場合は画面幅の1/2に制限、小さい場合は全幅
+      // PCなど横幅が大きい場合は画面幅の2/3に制限、小さい場合は全幅
       const maxContentWidth =
         screenWidth > 768
-          ? (screenWidth - sidePadding) * (1 / 2)
+          ? (screenWidth - sidePadding) * (2 / 3)
           : screenWidth - sidePadding;
 
       const containerWidth = Math.min(
@@ -216,9 +216,9 @@ export function PDFViewer({ src }: PDFViewerProps) {
   }
 
   return (
-    <div ref={containerRef} className="flex flex-col items-start w-full">
-      {/* PDF表示エリア（画面全体をスクロール） */}
-      <div className="flex flex-col items-start w-full md:w-1/2 gap-4 py-4">
+    <div ref={containerRef} className="flex flex-col items-center w-full">
+      {/* PDF表示エリア（中央配置・幅は画面の2/3） */}
+      <div className="flex flex-col items-center w-full md:w-2/3 gap-4 py-4">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
           <div key={pageNum} className="w-full flex justify-center">
             <canvas

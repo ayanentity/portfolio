@@ -29,10 +29,12 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
             ← Back to All Works
           </Link>
 
-          {/* PDFビューアー */}
-          <PDFViewer src={work.pdfPath} />
+          {/* 作品ビューア（中央配置・幅は画面の2/3） */}
+          <div className="mt-8 flex w-full justify-center">
+            <PDFViewer src={work.pdfPath} />
+          </div>
         </div>
-      </main>ø
+      </main>
     </div>
   );
 }
