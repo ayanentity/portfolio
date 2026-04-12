@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Header } from "./components/Header";
+import { HeroImages } from "./components/HeroImages";
+import { RevealOnScroll } from "./components/RevealOnScroll";
 
 const designerChips = [
   { label: "イラスト制作", left: "62%", top: "20%" },
@@ -36,40 +38,22 @@ export default function Home() {
           aria-label="Hero"
           className="flex w-full min-h-[calc(100vh-80px)] items-center justify-center"
         >
-          <div className="relative w-full">
-            {/* スマホ・縦長タブレット（md 未満） */}
-            <Image
-              src="/home/tate-ogp.png"
-              alt="Ayane's identity Ayanentity"
-              width={1890}
-              height={2883}
-              className="h-auto w-full object-contain md:hidden"
-              sizes="100vw"
-              priority
-            />
-            {/* 幅の広いPC（md 以上） */}
-            <Image
-              src="/home/ogp.png"
-              alt="Ayane's identity Ayanentity"
-              width={3600}
-              height={1890}
-              className="hidden h-auto w-full object-contain md:block"
-              sizes="100vw"
-              priority
-            />
-          </div>
+          <HeroImages />
         </section>
 
         <div className="mx-auto w-full max-w-7xl px-6 md:px-14">
           {/* ===== About me ===== */}
-          <section className="mt-14 md:mt-20">
+          <section id="about" className="mt-14 md:mt-20 scroll-mt-[100px]">
             <div className="flex flex-col gap-8">
-              <h2 className="mb-6 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
-                About me
-              </h2>
+              <RevealOnScroll>
+                <h2 className="mb-6 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
+                  About me
+                </h2>
+              </RevealOnScroll>
 
               <div className="grid gap-10 md:grid-cols-2 md:items-start">
-                <div>
+                <RevealOnScroll delay={0.06}>
+                  <div>
                   <h3 className="text-2xl font-extrabold text-[#2F2F2F]">
                     Nakazato Ayane
                   </h3>
@@ -107,8 +91,10 @@ export default function Home() {
                     <li>2026.3 　　Agile PBL祭り2026 登壇</li>
                     <li>2026.3 　　公立はこだて未来大学 卒業</li>
                   </ul>
-                </div>
+                  </div>
+                </RevealOnScroll>
 
+                <RevealOnScroll delay={0.12}>
                 <div className="flex justify-items-center pl-10 md:justify-end">
                   <div className="w-full max-w-[520px]">
                     <div className="relative h-full aspect-[4/4] overflow-hidden bg-white">
@@ -122,12 +108,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                </RevealOnScroll>
               </div>
             </div>
           </section>
 
           {/* ===== Interests ===== */}
           <section className="mt-60 md:mt-20">
+            <RevealOnScroll>
             <h2 className="mb-24 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
               What are your interests?
             </h2>
@@ -186,11 +174,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </RevealOnScroll>
           </section>
 
-          <footer className="mt-14 text-center text-xs text-[#2F2F2F]">
-            ©2026 Nakazato Ayane
-          </footer>
+          <RevealOnScroll>
+            <footer className="mt-14 text-center text-xs text-[#2F2F2F]">
+              ©2026 Nakazato Ayane
+            </footer>
+          </RevealOnScroll>
         </div>
       </main>
     </div>

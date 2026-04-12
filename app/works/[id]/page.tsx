@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Header } from "../../components/Header";
 import { PDFViewer } from "../../components/PDFViewer";
+import { WorkDetailImages } from "../../components/WorkDetailImages";
 import { getWorkById } from "../data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -31,21 +31,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
           <div className="mt-8 flex w-full justify-center">
             {work.imagePages?.length ? (
-              <div className="flex w-full flex-col items-center md:w-2/3">
-                <div className="flex w-full flex-col items-center gap-4 py-4">
-                  {work.imagePages.map((src, index) => (
-                    <Image
-                      key={src}
-                      src={src}
-                      alt={`${work.title} — ${index + 1}`}
-                      width={1920}
-                      height={1080}
-                      className="h-auto w-full max-w-full bg-white object-contain shadow-sm"
-                      sizes="(max-width: 768px) 100vw, 66vw"
-                    />
-                  ))}
-                </div>
-              </div>
+              <WorkDetailImages title={work.title} imagePages={work.imagePages} />
             ) : work.pdfPath ? (
               <PDFViewer src={work.pdfPath} />
             ) : null}
