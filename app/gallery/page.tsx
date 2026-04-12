@@ -1,5 +1,6 @@
-import Image from "next/image";
+import { GalleryGrid } from "../components/GalleryGrid";
 import { Header } from "../components/Header";
+import { RevealOnScroll } from "../components/RevealOnScroll";
 import { readdir } from "fs/promises";
 import path from "path";
 
@@ -20,52 +21,25 @@ export default async function GalleryPage() {
       <Header />
       <main className="relative min-h-screen pb-16 pt-24 md:pt-28">
         <div className="relative z-10 w-full mb-6 px-6 pt-6 md:px-14">
-          <h2 className="mb-6 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
-            Gallery
-          </h2>
+          <RevealOnScroll>
+            <h2 className="mb-6 text-[40px] font-bold tracking-[0.04em] text-[#D1180A]">
+              Gallery
+            </h2>
+          </RevealOnScroll>
 
-          <p className="mb-6 body-text text-[#2F2F2F]">
-            これまでに参加したイベントや発表会、制作作品の思い出の写真：特に気に入っているものを集めました！
-          </p>
+          <RevealOnScroll delay={0.05}>
+            <p className="mb-6 body-text text-[#2F2F2F]">
+              これまでに参加したイベントや発表会、制作作品の思い出の写真：特に気に入っているものを集めました！
+            </p>
+          </RevealOnScroll>
 
-          {/* デスクトップ: 3x3 グリッド */}
-          <div className="hidden md:grid md:grid-cols-3 md:gap-2">
-            {images.map((filename) => (
-              <div
-                key={filename}
-                className="relative aspect-[4/3] overflow-hidden bg-slate-100"
-              >
-                <Image
-                  src={`/${GALLERY_IMG_DIR}/${filename}`}
-                  alt=""
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-            ))}
-          </div>
-          {/* スマホ・縦長: 1列 */}
-          <div className="flex flex-col gap-2 md:hidden">
-            {images.map((filename) => (
-              <div
-                key={filename}
-                className="relative w-full aspect-[4/3] overflow-hidden bg-slate-100"
-              >
-                <Image
-                  src={`/${GALLERY_IMG_DIR}/${filename}`}
-                  alt=""
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              </div>
-            ))}
-          </div>
+          <GalleryGrid images={images} />
 
-          <footer className="mt-14 text-center text-xs text-[#2F2F2F]">
-            ©2026 Nakazato Ayane
-          </footer>
+          <RevealOnScroll delay={0.06}>
+            <footer className="mt-14 text-center text-xs text-[#2F2F2F]">
+              ©2026 Nakazato Ayane
+            </footer>
+          </RevealOnScroll>
         </div>
       </main>
     </div>
