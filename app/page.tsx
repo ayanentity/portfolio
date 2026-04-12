@@ -37,12 +37,23 @@ export default function Home() {
           className="flex w-full min-h-[calc(100vh-80px)] items-center justify-center"
         >
           <div className="relative w-full">
+            {/* スマホ・縦長タブレット（md 未満） */}
+            <Image
+              src="/home/tate-ogp.png"
+              alt="Ayane's identity Ayanentity"
+              width={1890}
+              height={2883}
+              className="h-auto w-full object-contain md:hidden"
+              sizes="100vw"
+              priority
+            />
+            {/* 幅の広いPC（md 以上） */}
             <Image
               src="/home/ogp.png"
               alt="Ayane's identity Ayanentity"
-              width={1200}
-              height={630}
-              className="h-auto w-full object-contain"
+              width={3600}
+              height={1890}
+              className="hidden h-auto w-full object-contain md:block"
               sizes="100vw"
               priority
             />
