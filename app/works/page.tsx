@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { PDFThumbnail } from "../components/PDFThumbnail";
+import { WorkImageThumbnail } from "../components/WorkImageThumbnail";
 import Link from "next/link";
 import { works } from "./data";
 
@@ -17,7 +18,14 @@ export default function WorksPage() {
           <div className="hidden md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-24">
             {works.map((work) => (
               <Link key={work.id} href={`/works/${work.id}`} className="group">
-                <PDFThumbnail src={work.pdfPath} title={work.title} />
+                {work.imagePages?.[0] ? (
+                  <WorkImageThumbnail
+                    src={work.imagePages[0]}
+                    title={work.title}
+                  />
+                ) : work.pdfPath ? (
+                  <PDFThumbnail src={work.pdfPath} title={work.title} />
+                ) : null}
               </Link>
             ))}
           </div>
@@ -26,7 +34,14 @@ export default function WorksPage() {
           <div className="md:hidden space-y-6">
             {works.map((work) => (
               <Link key={work.id} href={`/works/${work.id}`} className="block">
-                <PDFThumbnail src={work.pdfPath} title={work.title} />
+                {work.imagePages?.[0] ? (
+                  <WorkImageThumbnail
+                    src={work.imagePages[0]}
+                    title={work.title}
+                  />
+                ) : work.pdfPath ? (
+                  <PDFThumbnail src={work.pdfPath} title={work.title} />
+                ) : null}
               </Link>
             ))}
           </div>
