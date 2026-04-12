@@ -5,20 +5,24 @@ const designerChips = [
   { label: "イラスト制作", left: "62%", top: "20%" },
   { label: "UIデザイン", left: "72%", top: "18%" },
   { label: "グラフィックデザイン", left: "82%", top: "20%" },
-  { label: "UX設計", left: "58%", top: "32%" },
+  { label: "UX設計", left: "58%", top: "40%" },
   { label: "動画編集", left: "70%", top: "32%" },
   { label: "ポスターデザイン", left: "82%", top: "32%" },
   { label: "写真撮影", left: "18%", top: "80%" },
   { label: "3Dモデリング", left: "33%", top: "90%" },
+  { label: "ワークショップデザイン", left: "10%", top: "60%" },
 ];
 
 const generalChips = [
   { label: "資料作成", left: "60%", top: "10%" },
   { label: "企画立案", left: "78%", top: "8%" },
-  { label: "GitHub", left: "40%", top: "20% " },
-  { label: "プレゼン発表", left: "48%", top: "28%" },
+  { label: "GitHub", left: "40%", top: "28% " },
+  { label: "プレゼン発表", left: "60%", top: "30%" },
   { label: "ドキュメンテーション", left: "20%", top: "28%" },
   { label: "ファシリテーション", left: "64%", top: "48%" },
+  { label: "リーダーシップ", left: "46%", top: "20%" },
+  { label: "インタビュースキル", left: "80%", top: "41%" },
+  { label: "マーケティング思考", left: "40%", top: "55%" },
 ];
 
 export default function Home() {
@@ -26,25 +30,26 @@ export default function Home() {
     <div id="top" className="min-h-screen bg-white">
       <Header />
 
-      <main className="relative min-h-screen pb-16 pt-10 md:pt-28">
-        <div className="mx-auto w-full max-w-7xl px-6 md:px-14">
-          {/* ===== Hero ===== */}
-          <section className="grid min-h-[calc(100vh-80px)] ">
-            <div className="flex items-center justify-center">
-              <div className="relative w-full max-w-[560px] px-4">
-                <Image
-                  src="/home/ayanentity.png"
-                  alt="Ayane's identity Ayanentity"
-                  width={1120}
-                  height={560}
-                  className="h-auto w-full object-contain"
-                  sizes="(max-width: 768px) 90vw, 560px"
-                  priority
-                />
-              </div>
-            </div>
-          </section>
+      <main className="relative min-h-screen pb-32">
+        {/* Hero: ビューポート幅いっぱい（max-w-7xl の外） */}
+        <section
+          aria-label="Hero"
+          className="flex w-full min-h-[calc(100vh-80px)] items-center justify-center"
+        >
+          <div className="relative w-full">
+            <Image
+              src="/home/ogp.png"
+              alt="Ayane's identity Ayanentity"
+              width={1200}
+              height={630}
+              className="h-auto w-full object-contain"
+              sizes="100vw"
+              priority
+            />
+          </div>
+        </section>
 
+        <div className="mx-auto w-full max-w-7xl px-6 md:px-14">
           {/* ===== About me ===== */}
           <section className="mt-14 md:mt-20">
             <div className="flex flex-col gap-8">
