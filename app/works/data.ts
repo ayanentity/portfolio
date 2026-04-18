@@ -9,36 +9,6 @@ export type Work = {
 
 export const works: Work[] = [
   {
-    id: "cha-cha",
-    pdfPath: "/works/cha-cha.pdf",
-    title: "【電子工作】大学生を励ます仮想生物を創造",
-  },
-  {
-    id: "business-card",
-    pdfPath: "/works/business-card.pdf",
-    title: "名刺デザイン - ver1.0",
-  },
-  {
-    id: "chiekabanana",
-    title:
-      "ジェスチャーゲーム×Arduinoを組み合わせた新しいアソビの考案「チエカバナナ」",
-    imagePages: [
-      "/works/chiekabanana/chiekabanana.png",
-      "/works/chiekabanana/chiekabanana2.png",
-      "/works/chiekabanana/chiekabanana3.png",
-    ],
-  },
-  {
-    id: "illustration",
-    pdfPath: "/works/illustration.pdf",
-    title: "illustration",
-  },
-  {
-    id: "ad",
-    title: "広告デザイン",
-    imagePages: ["/works/ad/ad.png", "/works/ad/ad2.png"],
-  },
-  {
     id: "sharelounge",
     title: "TSUTAYA SHARE LOUNGE",
     imagePages: [
@@ -71,6 +41,40 @@ export const works: Work[] = [
     ],
   },
   {
+    id: "cha-cha",
+    pdfPath: "/works/cha-cha.pdf",
+    title: "【電子工作】大学生を励ます仮想生物を創造",
+  },
+  {
+    id: "business-card-ver2",
+    imagePages: ["/works/business-card-ver2.png"],
+    title: "名刺デザイン - ver2.0",
+  },
+  {
+    id: "chiekabanana",
+    title:
+      "ジェスチャーゲーム×Arduinoを組み合わせた新しいアソビの考案「チエカバナナ」",
+    imagePages: [
+      "/works/chiekabanana/chiekabanana.png",
+      "/works/chiekabanana/chiekabanana2.png",
+      "/works/chiekabanana/chiekabanana3.png",
+    ],
+  },
+  {
+    id: "hinyariseijin",
+    title: "ひんやり星人",
+    imagePages: [
+      "/works/hinyariseijin/hinyariseijin.png",
+      "/works/hinyariseijin/hinyariseijin2.png",
+    ],
+  },
+  {
+    id: "ad",
+    title: "広告デザイン",
+    imagePages: ["/works/ad/ad.png", "/works/ad/ad2.png"],
+  },
+
+  {
     id: "hoshisen",
     title: "星閃",
     imagePages: [
@@ -87,14 +91,6 @@ export const works: Work[] = [
     ],
   },
   {
-    id: "hinyariseijin",
-    title: "ひんやり星人",
-    imagePages: [
-      "/works/hinyariseijin/hinyariseijin.png",
-      "/works/hinyariseijin/hinyariseijin2.png",
-    ],
-  },
-  {
     id: "yutoyu",
     title: "湯と結",
     imagePages: [
@@ -106,6 +102,16 @@ export const works: Work[] = [
       "/works/yutoyu/yutoyu6.png",
       "/works/yutoyu/yutoyu7.png",
     ],
+  },
+  {
+    id: "business-card",
+    pdfPath: "/works/business-card.pdf",
+    title: "名刺デザイン - ver1.0",
+  },
+  {
+    id: "illustration",
+    pdfPath: "/works/illustration.pdf",
+    title: "illustration",
   },
 ];
 
