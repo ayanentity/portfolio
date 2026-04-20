@@ -9,6 +9,7 @@ const navItems = [
   { label: "Works", href: "/works", external: false },
   { label: "Blog", href: "https://note.com/ayanen_tity", external: true },
   { label: "Gallery", href: "/gallery", external: false },
+  { label: "GitHub", href: "https://github.com/ayanentity", external: true },
   { label: "Contact", href: "/contact", external: false },
 ];
 
@@ -48,7 +49,11 @@ export function Header() {
                   {item.label}
                 </a>
               ) : (
-                <Link key={item.label} href={item.href} className={linkUnderlineClass}>
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={linkUnderlineClass}
+                >
                   {item.label}
                 </Link>
               ),
