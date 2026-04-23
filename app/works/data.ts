@@ -9,6 +9,27 @@ export type Work = {
 
 export const works: Work[] = [
   {
+    id: "vibe-cooking",
+    title: "Vibe Cooking",
+    imagePages: [
+      "/works/vibe-cooking/01.png",
+      "/works/vibe-cooking/02.png",
+      "/works/vibe-cooking/03.png",
+      "/works/vibe-cooking/04.png",
+      "/works/vibe-cooking/05.png",
+      "/works/vibe-cooking/06.png",
+      "/works/vibe-cooking/07.png",
+      "/works/vibe-cooking/08.png",
+      "/works/vibe-cooking/09.png",
+      "/works/vibe-cooking/10.png",
+      "/works/vibe-cooking/11.png",
+      "/works/vibe-cooking/12.png",
+      "/works/vibe-cooking/13.png",
+      "/works/vibe-cooking/14.png",
+      "/works/vibe-cooking/15.png",
+    ],
+  },
+  {
     id: "sharelounge",
     title: "TSUTAYA SHARE LOUNGE",
     imagePages: [
