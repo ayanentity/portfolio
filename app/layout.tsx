@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/ogp.png",
+        url: "https://ayanentity.com/ogp.png",
         width: 1200,
         height: 630,
         alt: "Ayane's identity Ayanentity",
