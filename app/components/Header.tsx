@@ -32,7 +32,7 @@ export function Header() {
             className="transition-opacity duration-200 hover:opacity-85"
           >
             <span className="text-2xl font-bold tracking-[0.04em] text-[#D1180A]">
-              I am Ayanentity
+              I am ayanentity
             </span>
           </Link>
 
