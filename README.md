@@ -4,7 +4,7 @@ Figma MCPを活用して、デザインと実装に挑戦したポートフォ�
 
 ## 🔗 Live
 
-- 🌐 https://ayanentity.com  ← 独自ドメイン✨
+- 🌐 https://ayanentity.com  ← 独自ドメイン
 
 
 
@@ -18,7 +18,7 @@ Figmaで作成したデザインをもとに、MCPを介して開発へ接続し
 
 ## 🏗 Design
 手描きのラフ画を参考に、Figmaで整形しました！！
-今回は機能やページ情報の整理のために、FigJamを用いて要件整理にも挑戦してみました！✨
+今回は機能やページ情報の整理のために、FigJamを用いて要件整理にも挑戦してみました！
 
 
 <img width="1202" height="995" alt="スクリーンショット 2026-04-21 8 04 39" src="https://github.com/user-attachments/assets/2542a0f2-f0d9-4602-8a3c-b8161a042de2" />
