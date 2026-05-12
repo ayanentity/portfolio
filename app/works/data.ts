@@ -13,7 +13,7 @@ export const works: Work[] = [
     title: "Vibe Cooking",
     imagePages: [
       "/works/vibe-cooking/Vibe-Cooking01.png",
-      "/works/vibe-cooking/Vibe-Cooking02.png",
+      "/works/vibe-cooking/2.png",
       "/works/vibe-cooking/Vibe-Cooking03.png",
       "/works/vibe-cooking/Vibe-Cooking04.png",
       "/works/vibe-cooking/Vibe-Cooking05.png",
