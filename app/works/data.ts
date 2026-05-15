@@ -9,6 +9,29 @@ export type Work = {
 
 export const works: Work[] = [
   {
+    id: "OctoDeck",
+    title: "【P2HACKS2025最優秀賞作品】OctoDeck",
+    imagePages: [
+      "/works/OctoDeck/01.png",
+      "/works/OctoDeck/02.png",
+      "/works/OctoDeck/03.png",
+      "/works/OctoDeck/04.png",
+      "/works/OctoDeck/05.png",
+      "/works/OctoDeck/06.png",
+      "/works/OctoDeck/07.png",
+      "/works/OctoDeck/08.png",
+      "/works/OctoDeck/09.png",
+      "/works/OctoDeck/10.png",
+      "/works/OctoDeck/12.png",
+      "/works/OctoDeck/13.png",
+      "/works/OctoDeck/14.png",
+      "/works/OctoDeck/15.png",
+      "/works/OctoDeck/16.png",
+      "/works/OctoDeck/17.png",
+      "/works/OctoDeck/18.png",
+    ],
+  },
+  {
     id: "vibe-cooking",
     title: "Vibe Cooking",
     imagePages: [
