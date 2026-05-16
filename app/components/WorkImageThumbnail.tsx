@@ -11,7 +11,7 @@ export function WorkImageThumbnail({ src, title }: WorkImageThumbnailProps) {
       <div
         className="
           relative isolate
-          aspect-video
+          aspect-297/210
           overflow-hidden
           rounded-lg
           border

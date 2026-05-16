@@ -33,7 +33,8 @@ export function PDFThumbnail({ src, title }: PDFThumbnailProps) {
       return;
     }
 
-    const displayHeight = (displayWidth * 9) / 16;
+    // A4 landscape: 297mm × 210mm
+    const displayHeight = (displayWidth * 210) / 297;
 
     // デバイスのピクセル比を取得（Retinaディスプレイなどでは2以上）
     const devicePixelRatio = window.devicePixelRatio || 1;
@@ -133,10 +134,10 @@ export function PDFThumbnail({ src, title }: PDFThumbnailProps) {
         ref={containerRef}
         className="
           relative isolate
-          aspect-[16/9]
+          aspect-297/210
           overflow-hidden
           rounded-lg
-          border-[1px]
+          border
           border-[#E0E0E0]
           transition-all duration-300
           group-hover:border-[#D1180A]
