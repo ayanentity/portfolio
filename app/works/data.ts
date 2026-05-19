@@ -33,6 +33,23 @@ export const works: Work[] = [
     ],
   },
   {
+    id: "Nemulert",
+    title: "【JPHACKS2025 Innovator認定作品】Nemulert",
+    imagePages: [
+      "/works/Nemulert/Nemulert01.png",
+      "/works/Nemulert/Nemulert02.png",
+      "/works/Nemulert/Nemulert03.png",
+      "/works/Nemulert/Nemulert04.png",
+      "/works/Nemulert/Nemulert05.png",
+      "/works/Nemulert/Nemulert06.png",
+      "/works/Nemulert/Nemulert07.png",
+      "/works/Nemulert/Nemulert08.png",
+      "/works/Nemulert/Nemulert09.png",
+      "/works/Nemulert/Nemulert10.png",
+      "/works/Nemulert/Nemulert11.png",
+    ],
+  },
+  {
     id: "vibe-cooking",
     title: "Vibe Cooking",
     imagePages: [
