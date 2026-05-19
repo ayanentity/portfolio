@@ -22,6 +22,7 @@ export const works: Work[] = [
       "/works/OctoDeck/08.png",
       "/works/OctoDeck/09.png",
       "/works/OctoDeck/10.png",
+      "/works/OctoDeck/11.png",
       "/works/OctoDeck/12.png",
       "/works/OctoDeck/13.png",
       "/works/OctoDeck/14.png",
@@ -91,7 +92,7 @@ export const works: Work[] = [
   },
   {
     id: "business-card-ver2",
-    imagePages: ["/works/business-card-ver2.png"],
+    imagePages: ["/works/business-card.png"],
     title: "名刺デザイン - ver2.0",
   },
   {
