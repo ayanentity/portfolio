@@ -36,7 +36,7 @@ export const works: Work[] = [
     id: "Nemulert",
     title: "【JPHACKS2025 Innovator認定作品】Nemulert",
     imagePages: [
-      "/works/Nemulert/Nemulert01.png",
+      "/works/Nemulert/Nemulert01-v2.png",
       "/works/Nemulert/Nemulert02.png",
       "/works/Nemulert/Nemulert03.png",
       "/works/Nemulert/Nemulert04.png",
