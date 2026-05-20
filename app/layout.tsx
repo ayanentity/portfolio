@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ayanentity.com"),
   title: "Ayanentity | アヤネのアイデンティティ",
   description: "なかざと あやねのポートフォリオサイトです",
   icons: {
