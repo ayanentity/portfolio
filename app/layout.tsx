@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://ayanentity.com/ogp.png",
+        url: "/home/ogp-v2.png",
         width: 1200,
         height: 630,
         alt: "Ayane's identity Ayanentity",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ayanentity | アヤネのアイデンティティ",
     description: "なかざと あやねのポートフォリオサイトです",
-    images: ["/ogp.png"],
+    images: ["/home/ogp-v2.png"],
   },
 };
 
