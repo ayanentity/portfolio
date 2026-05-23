@@ -9,6 +9,15 @@ export type Work = {
 
 export const works: Work[] = [
   {
+    id: "profile",
+    title: "自己紹介",
+    imagePages: [
+      "/works/Profile/Profile01-v2.png",
+      "/works/Profile/Profile02-v2.png",
+      "/works/Profile/Profile03-v2.png",
+    ],
+  },
+  {
     id: "OctoDeck",
     title: "【P2HACKS2025最優秀賞作品】OctoDeck",
     imagePages: [
