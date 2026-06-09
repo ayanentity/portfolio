@@ -36,7 +36,7 @@ export const works: Work[] = [
       "/works/Meeture/Meeture13.png",
       "/works/Meeture/Meeture14.png",
       "/works/Meeture/Meeture15.png",
-      "/works/Meeture/Meeture16.png",
+      //"/works/Meeture/Meeture16.png",
       "/works/Meeture/Meeture17.png",
       "/works/Meeture/Meeture18.png",
     ],
