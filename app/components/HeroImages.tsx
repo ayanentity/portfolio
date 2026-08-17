@@ -10,19 +10,19 @@ export function HeroImages() {
     return (
       <>
         <Image
-          src="/home/tate-ogp.png"
+          src="/home/SP_FV.png"
           alt="Ayane's identity Ayanentity"
-          width={1890}
-          height={2883}
+          width={2121}
+          height={3240}
           className="h-auto w-full object-contain md:hidden"
           sizes="100vw"
           priority
         />
         <Image
-          src="/home/ogp.png"
+          src="/home/PC_FV.png"
           alt="Ayane's identity Ayanentity"
-          width={3600}
-          height={1890}
+          width={4584}
+          height={3240}
           className="hidden h-auto w-full object-contain md:block"
           sizes="100vw"
           priority
@@ -39,19 +39,19 @@ export function HeroImages() {
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
     >
       <Image
-        src="/home/tate-ogp.png"
+        src="/home/SP_FV.png"
         alt="Ayane's identity Ayanentity"
-        width={1890}
-        height={2883}
+        width={2121}
+        height={3240}
         className="h-auto w-full object-contain md:hidden"
         sizes="100vw"
         priority
       />
       <Image
-        src="/home/ogp.png"
+        src="/home/PC_FV.png"
         alt="Ayane's identity Ayanentity"
-        width={3600}
-        height={1890}
+        width={4584}
+        height={3240}
         className="hidden h-auto w-full object-contain md:block"
         sizes="100vw"
         priority
