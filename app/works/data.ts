@@ -10,7 +10,7 @@ export type Work = {
 export const works: Work[] = [
   {
     id: "profile",
-    title: "自己紹介",
+    title: "自己紹介 ~ 2026.03",
     imagePages: [
       "/works/Profile/Profile01-v3.png",
       "/works/Profile/Profile02-v2.png",
@@ -36,9 +36,22 @@ export const works: Work[] = [
       "/works/Meeture/Meeture13.png",
       "/works/Meeture/Meeture14.png",
       "/works/Meeture/Meeture15.png",
-      //"/works/Meeture/Meeture16.png",
       "/works/Meeture/Meeture17.png",
       "/works/Meeture/Meeture18.png",
+    ],
+  },
+  {
+    id: "Vibe-Cooking-New",
+    title: "リデザイン作品-Vibe Cooking ~ 2026.08",
+    imagePages: [
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New00.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New02.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New03.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New04.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New05.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New06.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New07.png",
+      "/works/Vibe-Cooking-Redesign/Vibe-Cooking-New08.png",
     ],
   },
   {
