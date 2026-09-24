@@ -12,7 +12,7 @@ export const works: Work[] = [
     id: "profile",
     title: "自己紹介 ~ 2026.03",
     imagePages: [
-      "/works/Profile/Profile01-v3.png",
+      "/works/Profile/Profile01.png",
       "/works/Profile/Profile02-v2.png",
       "/works/Profile/Profile03-v2.png",
     ],
